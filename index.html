@@ -4,13 +4,15 @@
     <input type="text" id="textInput">
     <button onclick="checkText()" style="margin-left:15px;">Sprawdź hasło</button>
     </br><p id="message" style="display: none">Złe hasło :( Spróbuj jeszcze raz.</p>
-	</br><p id="zadanie" style="display: none">Złe hasło :( Spróbuj jeszcze raz.</p>
-<script>
-        function showText() {
-            var hiddenText = document.getElementById("hiddenText");
-            hiddenText.style.display = "block"; // Set the display property to "block" to show the text
-        }
-    </script>
+	</br><p id="zadanie" style="display: none">
+Przedyskutujcie poniższy temat:</br>
+Poprzez gry, zabawy i inne formy pracy możemy "zasymulować" sytuacje/ wydarzenia, które harcerze napotkają w przyszłości. </br>
+Dzięki temu, dajemy im możlwowść podjęcia danych decyzji w bezpiecznym i kontrolowanym środowisku.</br>  
+Zastanówcie się jakie gry, zabawy lub formy pracy, mogą przekazać jakie wartości (lub czego mogą nauczyć). </br>
+Np. Monopoly - przedsiębiorczość/ zarządzanie pieniędzmi, Dix It - abstrakcyjne myślenie, Mafia - sztuka dyskusji i perswazji
+</br>		
+	</p>
+
     <script>
         function checkText() {
             var inputText = document.getElementById("textInput").value;
@@ -18,7 +20,7 @@
 			var zadanieElement = document.getElementById("zadanie");
 
             // Replace 'correct-text' with the correct text
-            if (inputText === 'ŚPIEWOGRANIE') {
+            if (inputText === 'MICHAEL2021') {
                 // Redirect to the link
                 // window.location.href = "tort1.html";
 				zadanieElement.style.display = "block";
